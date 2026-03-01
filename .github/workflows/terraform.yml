@@ -176,7 +176,7 @@ jobs:
             -no-color 2>&1 | tee plan-output.txt
 
       - name: Upload Plan
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: terraform-plan-dev
           path: |
@@ -284,7 +284,7 @@ jobs:
             -out=tfplan
 
       - name: Upload Plan
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: terraform-plan-staging
           path: terraform/tfplan
@@ -373,7 +373,7 @@ jobs:
             -out=tfplan
 
       - name: Upload Plan
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: terraform-plan-prod
           path: terraform/tfplan
